@@ -1,6 +1,6 @@
 # Implement a design from scratch
 ## For this project, we expect you to look at this concept:
-[source] (https://intranet.hbtn.io/concepts/963)
+
 
 #### In this project, you will implement from scratch, without any library, a web page. You will use all HTML/CSS/Accessibility/Responsive design knowledges that you learned previously.
 
