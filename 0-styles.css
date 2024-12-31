@@ -229,7 +229,7 @@ html {
   }
   .header__navbar_input:checked + .hamburger-menu .linea_up--rotate-right {
     position: relative;
-    top: 6.5px;
+    top: 6.5px; 
     transform: rotate(45deg);
     transition: transform 0.2s ease;
   }
