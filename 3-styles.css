@@ -1,6 +1,6 @@
 /* Reset / Normalize
   ============================= */
-  html {
+html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 }
@@ -196,6 +196,8 @@ template {
     --primary-color: white;
     --secondary-color: #071629;
     --button-primary-color: #ff6565;
+    --hover-link-color:  #ff6565;
+    --bottom-border-input: 1px solid #979797;
 }
 
 /* Global Styles
@@ -253,7 +255,7 @@ body {
 }
 
 .header__navbar_input:checked ~ .options_links .list_item--link {
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -380,7 +382,7 @@ body {
 
 /* Our Result Section
   ============================= */
-  .our_result {
+.our_result {
     width: 100vw;
     height: fit-content;
     text-align: center;
@@ -421,9 +423,47 @@ body {
     font-weight: 700;
 }
 
+/* Contact Us Section
+  ============================= */
+.contact_us {
+    display: block;
+    width: 100vw;
+    color: #071629;
+    text-align: center;
+}
+.contact_us button {
+    background: var(--button-primary-color);
+    padding: 20px;
+    border: none;
+    color: var(--primary-color);
+    border-radius: 30px;
+    margin-top: 40px;
+}
+.contact_us_wrapper {
+    margin: 0 auto;
+    padding-top: 70px;
+    width: 335px;
+    height: 473px;
+}
+.contact_us_wrapper .form .form_field {
+    border-bottom: var(--bottom-border-input);
+    text-align: left;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-top: 40px;
+}
+.contact_us_wrapper .form .form_field label {
+    display: block;
+    width: 100%;
+}
+.contact_us_wrapper .form .form_field input {
+    border: none;
+    outline-style: none;
+}
+
 /* Tablet view Styles
   ============================= */
-  @media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) {
     .header__navbar {
         top: 30px;
         display: flex;
